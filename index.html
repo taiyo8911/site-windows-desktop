@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width">
+        <!-- Bootstrap -->
+        <link href=" https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <!-- windows98 -->
+        <link rel="stylesheet" href="https://unpkg.com/98.css" />
+        <!-- フォントオーサム -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+        <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"></script>
+        <!-- CSS -->
+        <link rel="stylesheet" href="./css/style.css">
+        <title>マック屋のデスクトップ</title>
+    </head>
+
+    <body>
+        <main class="main">
+            <div id="contents_control">
+                <div class="wrap1 flex-row">
+                    <!-- アイコン -->
+                    <div class="wrap2 flex-col" onclick="document.getElementById('contents_window').style='display: block;'">
+                        <a href="#about">
+                            <img class="icon" src="./img/pc_desktop.png">
+                            <p class="icon_txt">ABOUT</p>
+                        </a>
+                        <a href="#js">
+                            <img class="icon" src="./img/folder_yellow.png">
+                            <p class="icon_txt">JS</p>
+                        </a>
+                        <a href="#php">
+                            <img class="icon" src="./img/folder_purple.png">
+                            <p class="icon_txt">PHP</p>
+                        </a>
+                        <a href="#link">
+                            <img class="icon" src="./img/folder_green.png">
+                            <p class="icon_txt">Link</p>
+                        </a>
+                    </div>
+
+
+
+                    <!-- ウィンドウコンテンツ -->
+                    <div id="contents_window" class="window contents-window">
+                        <div class="title-bar">
+                            <div class="title-bar-text">マック屋のデスクトップ</div>
+                            <div class="title-bar-controls">
+                                <button aria-label="Minimize"></button>
+                                <button aria-label="Maximize"></button>
+                                <button aria-label="Close" onclick="document.getElementById('contents_window').style='display: none;'"></button>
+                            </div>
+                        </div>
+
+                        <div class="window-body" id="contents_body">
+                            <div id="about">
+                                <p>マック屋のデスクトップへようこそ。<br>JavaScript、PHPで作ったウェブアプリを紹介するサイトです。</p>
+                                <ul>
+                                    <li><a href="https://codepen.io/maclove1" target="_blank">CODEPEN</a></li>
+                                    <li><a href="https://zenn.dev/taiyok" target="_blank">Zenn</a></li>
+                                </ul>
+                            </div>
+                            <div id="js">
+                                <p>JavaScriptで作ったウェブアプリです。</p>
+                                <ul>
+                                    <li><a href="https://app.taiyosite.com/app/js/pilot-test/" target="_blank">早押しゲーム</a></li>
+                                    <li><a href="https://app.taiyosite.com/app/js/command-battle/" target="_blank">コマンドバトル</a></li>
+                                    <li><a href="https://app.taiyosite.com/app/js/typing/" target="_blank">英単語タイピング</a></li>
+                                    <li><a href="https://app.taiyosite.com/app/js/cre-array/" target="_blank">Excel→配列変換ツール</a></li>
+                                    <li><a href="https://taiyo8911.github.io/cheaper/" target="_blank">価格比較ツール</a></li>
+                                    <li><a href="https://taiyo8911.github.io/poke-quiz/" target="_blank">POKEシルエットクイズ</a></li>
+                                    <li><a href="https://taiyo8911.github.io/slot-game/" target="_blank">スロットゲーム</a></li>
+                                </ul>
+                            </div>
+
+                            <div id="php">
+                                <p>PHP、データベースで作ったウェブアプリです。</p>
+                                <ul>
+                                    <li><a href="https://app.taiyosite.com/app/php/vote-mhr/" target="_blank">モンハンランキング</a></li>
+                                    <li><a href="https://app.taiyosite.com/app/php/vote/" target="_blank">アンケート作成システム</a></li>
+                                    <li><a href="https://app.taiyosite.com/app/php/battle" target="_blank">バトルゲーム</a></li>
+                                    <li><a href="https://app.taiyosite.com/app/php/calendar" target="_blank">カレンダー</a></li>
+                                    <li><a href="https://app.taiyosite.com/app/php/homepage" target="_blank">90年代風のホームページ</a></li>
+                                </ul>
+
+                            </div>
+
+                            <div id="link">
+                                <p>このサイトを作るのに参考にしたドキュメントです。</p>
+                                <ul>
+                                    <li><a href="https://jdan.github.io/98.css/" target="_blank">Windows98風CSS</a></li>
+                                    <li><a href="https://www.nishishi.com/javascript-tips/realtime-clock-setinterval.html" target="_blank">JavaScriptで時計表示</a></li>
+                                    <li><a href="https://dot-illust.net/" target="_blank">ドット絵素材</a></li>
+                                    <li><a href="https://allabout.co.jp/gm/gc/23969/" target="_blank">ページ移動せずに内容を切り替えるタブ機能</a></li>
+                                    <li><a href="https://programmingstudyblog.seesaa.net/article/477045699.html" target="_blank">onsubmitでJavaScriptの処理を発動</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </main>
+
+
+        <!-- フッター -->
+        <div id="footer" class="footer justify-center">
+            <div class="flex-row">
+                <button onclick="start()">スタート</button>
+                <input type="text" class="mx-4">
+                <span id="clock" class="mx-4">23:59</span>
+            </div>
+        </div>
+
+        <script src="./js/tab.js"></script>
+        <script src="./js/clock.js"></script>
+        <script src="./js/start.js"></script>
+
+    </body>
+
+</html>
